@@ -42,6 +42,7 @@ A principal característica dos fluxos de trabalho do Airflow é que todos os fl
 
 
 
+
 Links de estudo:
 
 * [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/index.html)
