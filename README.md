@@ -58,10 +58,42 @@ Lembra que ma task é a unidade mais básica de um DAG a qual é responsável po
 
 ## Webserver
 
-É o responsável por oferecer a interface de usuário do Airflow que torna possível visualizar de forma geral o estado dos DAGs, códigos que estão presentes nesses DAGs, estados de execução, logs de erro, entre outras funcionalidades. Também permite gerenciar usuários, funções e diversas configurações do Airflow.
+É o responsável por oferecer a `interface de usuário do Airflow` que torna possível visualizar de forma geral o estado dos DAGs, códigos que estão presentes nesses DAGs, estados de execução, logs de erro, entre outras funcionalidades. Também permite gerenciar usuários, funções e diversas configurações do Airflow.
 
 
+## Metadata Database
 
+O `Airflow` possui suporte para uma grande variedade de bancos de dados. É nesses bancos de dados que estão todas as informações a respeito dos DAGs, suas configurações, além de todas as configurações internas do Airflow, como os usuários e seus níveis de acesso. Ao realizarmos qualquer modificação no `Webserver` essas modificações são atualizadas no banco de dados de metadados (`Metadata Database`) pelo Scheduler (Agendador).
+
+
+## Scheduler
+
+O `Scheduler` (agendador) é responsável por assegurar que as `tasks` dentro de um `DAG` sejam executadas no momento adequado. Em outras palavras, o scheduler é um processo que cuida do agendamento dos fluxos de trabalho e faz o envio das tasks para o executor, seguindo as etapas:
+
+* Faz a leitura dos arquivos DAG criado pelo usuário, extrai as informações e as coloca no banco de dados;
+
+* Determina quais tarefas serão executadas e as coloca no estado enfileirado para executar na ordem correta; e
+
+* Busca e executa as tarefas que estão no estado enfileirado.
+
+
+## Executor
+
+Executor é o mecanismo que trata do modo de execução das tasks. O Airflow permite apenas um executor configurado por vez e inicialmente ele é definido no momento da instalação. Existem dois tipos de executores, os que executam as tarefas localmente e os que fazem isso de forma remota. Abaixo estão alguns executores locais e remotos:
+
+* Executores locais:
+
+    * [Sequential Executor](https://airflow.apache.org/docs/apache-airflow/stable/executor/sequential.html)
+
+    * [Local Executor]()
+
+Executores remotos:
+
+Celery Executor
+
+Kubernetes Executor
+
+CeleryKubernetes Executor
 
 
 
