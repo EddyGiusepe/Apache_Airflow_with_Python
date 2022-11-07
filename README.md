@@ -37,12 +37,28 @@ Nesse trecho de código (acima) observamos o seguinte:
 
 * `>>` entre as tarefas define uma dependência e controla em qual ordem as tarefas serão executadas
 
-O Airflow avalia esse script e executa as tarefas no intervalo definido e na ordem definida. 
+O Airflow avalia esse script e executa as tarefas no intervalo definido e na ordem definida. A seguir vamos a entender mais um pouco sobre DAGs: 
 
 
+# O que é um DAG?
+
+`DAG` é uma abreviação para `Directed Acyclic Graphs` - Grafos Acíclicos Dirigidos em tradução livre. A seguir vamos entender o que significa cada um desses termos:
+
+* Grafo é uma ferramenta matemática com nós e arestas responsáveis por conectar esses nós.
+
+* Dirigidos quer nos dizer que o fluxo de trabalho se dá apenas em uma direção.
+
+* Acíclico significa que a execução não entrará em um laço de repetição, então eventualmente acabaremos em um nó final que não estará conectado com o nó inicial.
 
 
+Lembra que ma task é a unidade mais básica de um DAG a qual é responsável por implementar determinada lógica no pipeline.
 
+
+# Principais conceitos no Airflow
+
+## Webserver
+
+É o responsável por oferecer a interface de usuário do Airflow que torna possível visualizar de forma geral o estado dos DAGs, códigos que estão presentes nesses DAGs, estados de execução, logs de erro, entre outras funcionalidades. Também permite gerenciar usuários, funções e diversas configurações do Airflow.
 
 
 
