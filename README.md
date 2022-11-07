@@ -24,6 +24,20 @@ A principal característica dos fluxos de trabalho do Airflow é que todos os fl
 * `Flexível`: a parametrização do **fluxo de trabalho** é incorporada, aproveitando o mecanismo de modelagem [Jinja](https://jinja.palletsprojects.com/en/3.1.x/).
 
 
+A seguir mostramos um exemplo de um trecho de código:
+
+![image](https://user-images.githubusercontent.com/69597971/200350653-75962f6f-806c-4033-9733-379d72797107.png)
+
+
+Nesse trecho de código (acima) observamos o seguinte:
+
+* O `DAG` chamado "demo", começando em 1º de janeiro de 2022 e sendo executado uma vez por dia. Um `DAG` é a representação do Airflow de um fluxo de trabalho
+
+* Duas tarefas, um `BashOperator` executando um script Bash e uma função Python definida usando o decorador `@task`
+
+* `>>` entre as tarefas define uma dependência e controla em qual ordem as tarefas serão executadas
+
+O Airflow avalia esse script e executa as tarefas no intervalo definido e na ordem definida. 
 
 
 
