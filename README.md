@@ -85,15 +85,20 @@ Executor é o mecanismo que trata do modo de execução das tasks. O Airflow per
 
     * [Sequential Executor](https://airflow.apache.org/docs/apache-airflow/stable/executor/sequential.html)
 
-    * [Local Executor]()
+    * [Local Executor](https://airflow.apache.org/docs/apache-airflow/stable/executor/local.html)
 
-Executores remotos:
+* Executores remotos:
 
-Celery Executor
+    * [Celery Executor](https://airflow.apache.org/docs/apache-airflow/stable/executor/celery.html)
 
-Kubernetes Executor
+    * [Kubernetes Executor](https://airflow.apache.org/docs/apache-airflow/stable/executor/kubernetes.html)
 
-CeleryKubernetes Executor
+    * [CeleryKubernetes Executor](https://airflow.apache.org/docs/apache-airflow/stable/executor/celery_kubernetes.html)
+
+
+## Operator
+
+`Operator` é o componente que determina qual ferramenta será utilizada para executar as tasks. As tasks podem utilizar diferentes tecnologias, <font color="yellow">por exemplo</font>, poderíamos primeiro rodar um script Bash na primeira task, a segunda poderia ser um script em Python, etc. O Airflow fornece uma grande variedade de operadores. Para trabalhar com tasks escritas em Python utilizamos o PythonOperator. Já para trabalhar com scripts Bash será utilizado o BashOperator. Em trabalhos mais complexos poderemos utilizar o DockerOperator que irá executar um comando dentro de um container Docker e você pode ainda criar seu próprio operador.
 
 
 
