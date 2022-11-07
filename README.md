@@ -102,12 +102,16 @@ Executor é o mecanismo que trata do modo de execução das tasks. O Airflow per
 
 ![image](https://user-images.githubusercontent.com/69597971/200391317-b356a138-46d0-41bf-bdbb-15eac573e8c1.png)
 
+Podemos dizer então que a principal função de um DAG é realizar a orquestração dos operadores definidos, e isso inclui iniciar e parar os operadores, iniciar o operador consecutivo à medida que o anterior tiver finalizado.
 
 
+## DAG run
 
+É a execução de fato do DAG, e isso inclui os horários, tempo de execução de cada uma das tasks, entre outras informações relevantes do DAG. Quando um DAG é executado, um DAG Run é criado e todas as tasks desse DAG são executadas. Um detalhe é que cada `DAG run` é executado de forma separada dos demais, isso significa que você pode executar o mesmo DAG diversas vezes ao mesmo tempo ou executar vários DAGs diferentes ao mesmo tempo.
 
+Colocando tudo que foi falado anteriormente em ordem, temos uma noção mais ampla da arquitetura do Airflow e de como ele funciona em volta do conceito de DAG.
 
-
+![image](https://user-images.githubusercontent.com/69597971/200392121-f5075faa-9559-4c20-b267-bc005ad1183c.png)
 
 
 
