@@ -98,8 +98,9 @@ Executor é o mecanismo que trata do modo de execução das tasks. O Airflow per
 
 ## Operator
 
-`Operator` é o componente que determina qual ferramenta será utilizada para executar as tasks. As tasks podem utilizar diferentes tecnologias, <font color="yellow">por exemplo</font>, poderíamos primeiro rodar um script Bash na primeira task, a segunda poderia ser um script em Python, etc. O Airflow fornece uma grande variedade de operadores. Para trabalhar com tasks escritas em Python utilizamos o PythonOperator. Já para trabalhar com scripts Bash será utilizado o BashOperator. Em trabalhos mais complexos poderemos utilizar o DockerOperator que irá executar um comando dentro de um container Docker e você pode ainda criar seu próprio operador.
+`Operator` é o componente que determina qual ferramenta será utilizada para executar as tasks. As tasks podem utilizar diferentes tecnologias, `por exemplo`, poderíamos primeiro rodar um `script Bash` na primeira task, a segunda poderia ser um `script em Python`, . . . etc. O `Airflow` fornece uma grande variedade de operadores. Para trabalhar com tasks escritas em Python utilizamos o `PythonOperator`. Já para trabalhar com scripts Bash será utilizado o `BashOperator`. Em trabalhos mais complexos poderemos utilizar o `DockerOperator` que irá executar um comando dentro de um container Docker e você pode ainda criar seu próprio operador.
 
+![image](https://user-images.githubusercontent.com/69597971/200391317-b356a138-46d0-41bf-bdbb-15eac573e8c1.png)
 
 
 
