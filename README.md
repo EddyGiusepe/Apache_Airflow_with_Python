@@ -55,6 +55,7 @@ O Airflow avalia esse script e executa as tarefas no intervalo definido e na ord
 Lembra que ma task é a unidade mais básica de um DAG a qual é responsável por implementar determinada lógica no pipeline.
 
 
+
 # Principais conceitos no Airflow
 
 ## Webserver
