@@ -56,6 +56,7 @@ Lembra que ma task é a unidade mais básica de um DAG a qual é responsável po
 
 
 
+
 # Principais conceitos no Airflow
 
 ## Webserver
