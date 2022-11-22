@@ -6,6 +6,7 @@
 
 O `Apache Airflow` é uma plataforma de código aberto para desenvolvimento (criar), agendamento e monitoramento de fluxos de trabalho de forma programática.
 
+
 Quando os fluxos de trabalho são definidos como código, eles se tornam mais fáceis de manter, versáteis, testáveis e colaborativos.
 
 A estrutura `Python` extensível do Airflow permite que você crie fluxos de trabalho conectando-se a praticamente qualquer tecnologia. Uma interface da Web ajuda a gerenciar o estado de seus fluxos de trabalho. O `Airflow` pode ser implantado de várias maneiras, variando de um único processo em seu laptop a uma configuração distribuída para oferecer suporte até mesmo aos maiores fluxos de trabalho.
