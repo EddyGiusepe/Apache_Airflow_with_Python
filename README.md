@@ -14,6 +14,7 @@ A estrutura `Python` extensível do Airflow permite que você crie fluxos de tra
 O Airflow é usado para criar fluxos de trabalho como `Gráficos Acíclicos Direcionados` (`DAGs`) de tarefas. O scheduler (agendador) do Airflow executa suas tarefas em uma matriz de trabalhadores (workers) enquanto segue as dependências especificadas. A rica interface do usuário facilita a visualização de pipelines em execução na produção, o monitoramento do progresso e a solução de problemas quando necessário.
 
 
+
 # Fluxos de trabalho (Workflows) como código
 
 A principal característica dos fluxos de trabalho do Airflow é que todos os fluxos de trabalho são definidos em código `Python`. “Fluxos de trabalho como código” serve a vários propósitos:
