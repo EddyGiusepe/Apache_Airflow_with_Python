@@ -26,6 +26,7 @@ A principal característica dos fluxos de trabalho do Airflow é que todos os fl
 
 
 
+
 A seguir mostramos um exemplo de um trecho de código:
 
 ![image](https://user-images.githubusercontent.com/69597971/200350653-75962f6f-806c-4033-9733-379d72797107.png)
