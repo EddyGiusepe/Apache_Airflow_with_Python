@@ -33,6 +33,7 @@ A seguir mostramos um exemplo de um trecho de código:
 ![image](https://user-images.githubusercontent.com/69597971/200350653-75962f6f-806c-4033-9733-379d72797107.png)
 
 
+
 Nesse trecho de código (acima) observamos o seguinte:
 
 * O `DAG` chamado "demo", começando em 1º de janeiro de 2022 e sendo executado uma vez por dia. Um `DAG` é a representação do Airflow de um fluxo de trabalho
