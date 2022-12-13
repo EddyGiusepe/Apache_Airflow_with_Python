@@ -16,6 +16,7 @@ O Airflow é usado para criar fluxos de trabalho como `Gráficos Acíclicos Dire
 
 
 
+
 # Fluxos de trabalho (Workflows) como código
 
 A principal característica dos fluxos de trabalho do Airflow é que todos os fluxos de trabalho são definidos em código `Python`. “Fluxos de trabalho como código” serve a vários propósitos:
