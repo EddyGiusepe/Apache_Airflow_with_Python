@@ -34,6 +34,7 @@ A seguir mostramos um exemplo de um trecho de código:
 
 
 
+
 Nesse trecho de código (acima) observamos o seguinte:
 
 * O `DAG` chamado "demo", começando em 1º de janeiro de 2022 e sendo executado uma vez por dia. Um `DAG` é a representação do Airflow de um fluxo de trabalho
